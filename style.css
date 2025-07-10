@@ -1,0 +1,364 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  pointer-events: none; /* prevent clicks on video */
+}
+
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin-right: 15px;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a855f7;
+}
+
+.sticky-icon  {
+	z-index:1;
+	position:fixed;
+	top:20%;
+	right:0%;
+	width:220px;
+	display:flex;
+	flex-direction:column;}  
+.sticky-icon a  {
+	transform:translate(160px,0px);
+	border-radius:50px 0px 0px 50px;
+	text-align:left;
+	margin:2px;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px;
+	font-size:22px;
+	font-family:'Oswald', sans-serif;
+	transition:all 0.8s;}
+.sticky-icon a:hover  {
+	color:#FFF;
+	transform:translate(0px,0px);}	
+.sticky-icon a:hover i  {
+	transform:rotate(360deg);}
+/*.search_icon a:hover i  {
+	transform:rotate(360deg);}*/
+.Facebook  {
+	background-color:#2C80D3;
+	color:#FFF;}
+	
+.Whatsapp {
+	background-color:#09fa1d;
+	color:#FFF;}
+	
+.Instagram  {
+	background-color:#FD1D1D;
+	color:#FFF;}
+						
+.sticky-icon a i {
+	background-color:#FFF;
+	height:40px;
+	width:40px;
+	color:#000;
+	text-align:center;
+	line-height:40px;
+	border-radius:50%;
+	margin-right:20px;
+	transition:all 0.5s;}
+.sticky-icon a i.fa-facebook-f  {
+	background-color:#FFF;
+	color:#2C80D3;}
+	
+.sticky-icon a i.fa-instagram  {
+	background-color:#FFF;
+	color:#FD1D1D;}
+
+.sticky-icon a i.fa-whatsapp {
+	background-color:#FFF;
+	color:#3ffd1d;}
+
+.fas fa-shopping-cart  {
+	background-color:#FFF;}	
+#myBtn {
+	height:50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  text-align:center;
+  padding:10px;
+  text-align:center;
+	line-height:40px;
+  border: none;
+  outline: none;
+  background-color: #1e88e5;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.fa-arrow-circle-up  {
+	font-size:30px;}
+
+#myBtn:hover {
+  background-color: #555;
+}			
+
+body {
+  background: #0a0f2c;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ccc;
+  margin: 160px;
+  padding: 40px;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;            /* Changed from 5px to 0px */
+  padding: 20px 0;
+}
+
+.intro-text {
+  max-width: 600px;
+  margin-right: 0px;   /* Changed from 10px to 0px */
+}
+
+
+.text-area {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-area h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.text-area h1 span {
+  display: block;
+  background: linear-gradient(90deg, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-area p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+.image-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-ring {
+  padding: 8px;
+  background: radial-gradient(circle at center, #111, #0a0f2c);
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #3b82f6;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0a0f2c;
+}
+
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.work-card {
+  background: #111;
+  border: 2px solid #a855f7;
+  padding: 20px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.work-card:hover {
+  background-color: #a855f7;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.work-detail {
+  display: none;
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.work-detail img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.gallery-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #a855f7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.gallery-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+/* Section styling */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.content {
+  max-width: 700px;
+  animation: fadeIn 1.5s ease;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.mixer {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border: 4px solid #0ff;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mixer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.7);
+}
+
+
+/* Profile Picture */
+.profile-pic {
+  width: 300px;          /* reduced from 280px */
+  height: 360px;         /* reduced from 380px */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+  box-shadow: 0 0 15px #00bcd4;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

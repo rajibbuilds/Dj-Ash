@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | DJ Aash</title>
+
+  <style>
+    /* Background video */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -2;
+      pointer-events: none;
+      /* prevent clicks on video */
+    }
+
+    /* Overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    .event-gallery {
+      margin-bottom: 60px;
+      padding: 20px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+
+    .event-gallery h2 {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #00ffff;
+      padding-bottom: 10px;
+      text-shadow: 0 0 6px #00ffff;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #333;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #111;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px #00ffff;
+      border-color: #00ffff;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .gallery-grid img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="bg.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <header>
+    <h1>Event Gallery</h1>
+    <a href="index.html" class="back-home" style="color: #00ffff; font-weight: bold; text-decoration: underline;">← Back to Home</a>
+  </header>
+
+  <section class="event-gallery" id="birthday-gallery">
+    <h2>🎉 Birthday Parties</h2>
+    <div class="gallery-grid">
+      <img src="B1.jpg" alt="Birthday 1">
+      <img src="B2.jpg" alt="Birthday 2">
+      <img src="B3.jpg" alt="Birthday 3">
+      <img src="B4.jpg" alt="Birthday 4">
+    </div>
+  </section>
+
+  <section class="event-gallery" id="house-gallery">
+    <h2>🏠 House Parties</h2>
+    <div class="gallery-grid">
+      <img src="H1.jpg" alt="House 1">
+      <img src="H2.jpg" alt="House 2">
+      <img src="H3.jpg" alt="House 3">
+      <img src="H4.jpg" alt="House 4">
+    </div>
+  </section>
+
+  <section class="event-gallery" id="corporate-gallery">
+    <h2>🏢 Corporate Events</h2>
+    <div class="gallery-grid">
+      <img src="C1.jpg" alt="Corporate 1">
+      <img src="C2.jpg" alt="Corporate 2">
+      <img src="C3.jpg" alt="Corporate 3">
+      <img src="C4.jpg" alt="Corporate 4">
+    </div>
+  </section>
+
+  <section class="event-gallery" id="wedding-gallery">
+    <h2>💍 Weddings</h2>
+    <div class="gallery-grid">
+      <img src="W1.jpg" alt="Wedding 1">
+      <img src="W2.jpg" alt="Wedding 2">
+      <img src="W3.jpg" alt="Wedding 3">
+      <img src="W4.jpg" alt="Wedding 4">
+      <img src="W5.jpg" alt="Wedding 5">
+    </div>
+  </section>
+
+</body>
+
+</html>

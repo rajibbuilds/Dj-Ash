@@ -7,9 +7,8 @@
   <title>Sahu Sounds</title>
   <link rel="icon" href="logo.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="style1.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -23,15 +22,21 @@
   <div class="overlay"></div>
 
   <!-- Navbar -->
-  <nav>
-    <img src="logo.jpg" alt="DJ Logo" class="logo" />
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-  </nav>
+<nav>
+  <img src="logo.jpg" alt="DJ Logo" class="logo" />
+  <div class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
+
 
   <!-- Sections -->
   <section id="home">
@@ -45,9 +50,8 @@
     <div class="text-area">
       <h1>Hi<br><span>I'm DJ ASH</span></h1>
       <p>
-        Whether it's soulful Old School, heart-thumping EDM, smooth Afro rhythms, or high-energy Bollywood tracks, I
-        craft every set to match the vibe of the crowd. No genre is off-limits — just pure musical energy, all night
-        long.
+        Whether it's soulful Old School, heart-thumping EDM, smooth Afro rhythms, or high-energy Bollywood tracks,
+        I craft every set to match the vibe of the crowd. No genre is off-limits — just pure musical energy, all night long.
       </p>
     </div>
 
@@ -58,16 +62,14 @@
     </div>
   </div>
 
-  <!--Start Sticky Icon-->
+  <!-- Sticky Icon -->
   <div class="sticky-icon">
-    <a href="https://www.instagram.com/dj_ash_7303?igsh=MW1mMW9yaGNxOGlvag==" class="Instagram"><i
-        class="fab fa-instagram"></i> Instagram </a>
-    <a href="https://www.facebook.com/share/1C4DzNexQV/" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook
-    </a>
-    <a href="https://wa.me/917977089553" class="Whatsapp"><i class="fab fa-whatsapp"> </i> Whatsapp </a>
+    <a href="https://www.instagram.com/dj_ash_7303?igsh=MW1mMW9yaGNxOGlvag==" class="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="https://www.facebook.com/share/1C4DzNexQV/" class="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+    <a href="https://wa.me/917977089553" class="Whatsapp"><i class="fab fa-whatsapp"></i> Whatsapp</a>
   </div>
-  <!--End Sticky Icon-->
 
+  <!-- Work Section -->
   <section id="work">
     <div class="content">
       <h2>My Work</h2>
@@ -78,42 +80,38 @@
         <div class="work-card" onclick="toggleDetail('wedding')">Weddings</div>
       </div>
 
-      <!-- Detailed Sections -->
+      <!-- Work Details -->
       <div id="birthday" class="work-detail">
         <h3>Birthday Parties</h3>
         <img src="Birthday.jpg" alt="Birthday Party" />
         <p>High-energy DJ sets, kid-friendly tracks, and memorable themes for all ages!</p>
-        <a href="gallery.html#birthday-gallery"
-          style="color: #00ffff; font-weight: bold; text-decoration: underline;">🎉 View Birthday Gallery</a>
+        <a href="gallery.html#birthday-gallery" class="gallery-link">🎉 View Birthday Gallery</a>
       </div>
 
       <div id="house" class="work-detail">
         <h3>House Parties</h3>
         <img src="House.jpg" alt="House Party" />
         <p>Vibe-filled music sessions for your late-night get-togethers and house jams.</p>
-        <a href="gallery.html#house-gallery" style="color: #00ffff; font-weight: bold; text-decoration: underline;">🏠
-          View House Parties Gallery</a>
+        <a href="gallery.html#house-gallery" class="gallery-link">🏠 View House Parties Gallery</a>
       </div>
 
       <div id="corporate" class="work-detail">
         <h3>Corporate Events</h3>
         <img src="Events.jpg" alt="Corporate Event" />
         <p>Professional setups for award functions, team parties, and product launches.</p>
-        <a href="gallery.html#corporate-gallery"
-          style="color: #00ffff; font-weight: bold; text-decoration: underline;">🏢 View Corporate Events Gallery</a>
+        <a href="gallery.html#corporate-gallery" class="gallery-link">🏢 View Corporate Events Gallery</a>
       </div>
 
       <div id="wedding" class="work-detail">
         <h3>Weddings</h3>
         <img src="Wedding.jpg" alt="Wedding DJ" />
         <p>Unforgettable wedding soundtracks, sangeet shows, and dance-floor memories.</p>
-        <a href="gallery.html#wedding-gallery" style="color: #00ffff; font-weight: bold; text-decoration: underline;">💍
-          View Wedding Gallery</a>
+        <a href="gallery.html#wedding-gallery" class="gallery-link">💍 View Wedding Gallery</a>
       </div>
     </div>
   </section>
 
-
+  <!-- About Section -->
   <section id="about">
     <div class="content">
       <h2>About Me</h2>
@@ -122,6 +120,7 @@
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <div class="content">
       <h2>Contact Me</h2>
@@ -129,18 +128,26 @@
       <p>Phone Number: 7977089553</p>
     </div>
   </section>
-</body>
 <script>
-  function toggleDetail(id) {
-    const allDetails = document.querySelectorAll(".work-detail");
-    allDetails.forEach(detail => {
-      if (detail.id === id) {
-        detail.style.display = detail.style.display === "block" ? "none" : "block";
-      } else {
-        detail.style.display = "none";
-      }
-    });
-  }
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector("nav ul");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 </script>
+  <script>
+    function toggleDetail(id) {
+      const allDetails = document.querySelectorAll(".work-detail");
+      allDetails.forEach(detail => {
+        if (detail.id === id) {
+          detail.style.display = detail.style.display === "block" ? "none" : "block";
+        } else {
+          detail.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
 
 </html>

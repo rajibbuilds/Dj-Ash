@@ -349,21 +349,18 @@ p {
 
 @media (max-width: 768px) {
   .sticky-icon {
-    top: 150px;
-    bottom: 10px;
-    right: 10px;
+    top: 265px;
+    right: 0;
     flex-direction: column;
     gap: 6px;
+    z-index: 1000;
   }
 
   .sticky-icon a {
+    transform: translateX(0); /* Fully visible */
     padding: 8px 12px;
     font-size: 14px;
-    transform: translateX(0px); /* fully visible on mobile */
-  }
-
-  .sticky-icon a:hover {
-    transform: translateX(0);
+    white-space: nowrap;
   }
 
   .sticky-icon a i {
